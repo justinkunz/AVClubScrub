@@ -1,0 +1,11 @@
+.article {
+    margin-bottom: 50px;
+}
+.listedArticles {
+    width: 70%;
+    margin: 100px 15% 0 15%;
+}
+.trash:hover {
+    transform: rotate(10deg) scale(1.2);
+    transition-duration: 0.7s;
+}
