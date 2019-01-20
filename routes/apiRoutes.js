@@ -4,7 +4,8 @@ var Comment = require("../models/NewComments");
 var mongoose = require('mongoose');
 var Scrub = require("../models/Scrubs");
 
-mongoose.connect('mongodb://localhost/Scrub')
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Scrub"
+mongoose.connect(MONGODB_URI)
 
 function apiRoutes(app) {
 
